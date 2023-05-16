@@ -1,39 +1,87 @@
-*{
-    font-family: 'Poppins', sans-serif;
+* {
+  font-family: "Nunito", sans-serif;
 }
 
 body {
-    background-color: white;
+  background-color: white;
 }
 
 h1 {
-    text-align: center;
-    margin-top: 50px;
+  text-align: center;
+  margin-top: 50px;
 }
 
-form{
-    align-items: center;
-    justify-content: center;
+form {
+  align-items: center;
+  justify-content: center;
+  display: flex;
 }
 
 label {
-    font-size: 20px;
-    margin-right: 10px;
+  font-size: 20px;
+  margin-right: 10px;
+  justify-content: center;
+  display: flex;
 }
 
 input[type="text"] {
-    font-size: 20px;
-    width: 150px;
-    padding: 5px;
-    margin-right: 10px;
+  font-size: 15px;
+  width: 100px;
+  padding: 5px;
+  margin-right: 10px;
+  display: flex;
+  justify-content: center;
 }
 
 input[type="submit"] {
-    font-size: 20px;
-    padding: 5px 10px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
+  font-size: 20px;
+  padding: 5px 10px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+}
+
+input[type="button"] {
+  background-color: black;
+  color: white;
+  border-radius: 4px;
+}
+
+#resultado {
+  font-size: 24px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 24px;
+    margin-top: 30px;
+  }
+
+  form {
+    flex-direction: column;
+  }
+
+  label {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+
+  input[type="text"] {
+    font-size: 14px;
+    width: 150px;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  input[type="submit"] {
+    font-size: 16px;
+    padding: 8px 14px;
+    margin-right: 0;
+  }
 }
